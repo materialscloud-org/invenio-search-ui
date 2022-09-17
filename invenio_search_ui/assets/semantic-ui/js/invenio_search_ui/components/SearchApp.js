@@ -23,7 +23,7 @@ import {
   buildUID,
 } from "react-searchkit";
 import { GridResponsiveSidebarColumn } from "react-invenio-forms";
-import { Container, Grid, Button } from "semantic-ui-react";
+import { Container, Grid, Button, Popup, Icon } from "semantic-ui-react";
 import { Results, ResultOptions } from "./Results";
 import { SearchBar } from "./SearchBar";
 import { SearchConfigurationContext } from "./context";
@@ -103,6 +103,26 @@ export const SearchApp = ({ config, appName }) => {
               </Overridable>
 
               <Grid relaxed>
+
+                <div className="two column row rel-mt-2">
+                  <div className="computer only four wide column"></div>
+                  <div className="twelve wide computer sixteen wide mobile sixteen wide tablet column">
+                    <div className="ui grid">
+                      <div className="middle aligned row" style={{"padding-bottom": "0px"}}>
+                        <div className="left eight wide column">
+                          <div style={{"display": "flex", "align-items": "center"}}>
+                            <h2 style={{"margin": "0px"}}>Publications</h2>
+                            <Popup
+                                trigger={<Icon className="ml-5" name="info circle" style={{"line-height": "normal"}}/>}
+                                content={"Search for published records using the search bar. The search guide provides simple examples of advanced search queries."}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <Grid.Row
                   textAlign="right"
                   columns={2}
