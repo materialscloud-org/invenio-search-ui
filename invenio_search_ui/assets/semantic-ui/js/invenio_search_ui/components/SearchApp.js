@@ -114,7 +114,7 @@ export const SearchApp = ({ config, appName }) => {
                             <h2 style={{"margin": "0px"}}>Publications</h2>
                             <Popup
                                 trigger={<Icon className="ml-5" name="info circle" style={{"line-height": "normal"}}/>}
-                                content={"Search for published versions using the search bar. The search guide provides simple examples of advanced search queries."}
+                                content={"Search for publications using the search bar. The search guide provides examples of advanced search queries."}
                             />
                           </div>
                         </div>
