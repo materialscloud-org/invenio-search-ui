@@ -11,6 +11,7 @@
 from copy import deepcopy
 
 from flask import Blueprint, current_app, json, render_template
+from flask_login import login_required
 
 blueprint = Blueprint(
     "invenio_search_ui",
@@ -21,6 +22,7 @@ blueprint = Blueprint(
 
 
 @blueprint.route("/search")
+@login_required
 def search():
     """Search page ui."""
     return render_template(current_app.config["SEARCH_UI_SEARCH_TEMPLATE"])
