@@ -111,10 +111,10 @@ export const SearchApp = ({ config, appName }) => {
                       <div className="middle aligned row" style={{"padding-bottom": "0px"}}>
                         <div className="left eight wide column">
                           <div style={{"display": "flex", "align-items": "center"}}>
-                            <h2 style={{"margin": "0px"}}>Publications</h2>
+                            <h2 style={{"margin": "0px"}}>Shared records</h2>
                             <Popup
                                 trigger={<Icon className="ml-5" name="info circle" style={{"line-height": "normal"}}/>}
-                                content={"Use the search box to filter through all published records. The search guide provides examples of advanced search queries."}
+                                content={"Use the search box to filter through all shared records. The search guide provides examples of search queries."}
                             />
                           </div>
                         </div>
